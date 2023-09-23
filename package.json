@@ -1,0 +1,19 @@
+{
+  "name": "freelance",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "Smoketest": "npx cypress run --headed --spec cypress/e2e/TC1_VerifySuccessfulLogin.cy.js --browser chrome",
+    "RegressionTest": "npx cypress run --headed --spec cypress/e2e/TC2_AddNewUser.cy.js --browser chrome"
+  },
+  "author": "Mahender",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^13.2.0"
+  },
+  "devDependencies": {
+    "cypress-mochawesome-reporter": "^3.6.0",
+    "cypress-xpath": "^2.0.1"
+  }
+}
