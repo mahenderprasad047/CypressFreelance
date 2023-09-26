@@ -16,6 +16,11 @@ class Common
 		
 		return random;
     }
+
+	static WaitForFewSeconds(iSecs)
+	{
+		cy.wait(iSecs*1000);
+	}
 }
 
 export default Common;

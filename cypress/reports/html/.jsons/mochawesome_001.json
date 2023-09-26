@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-09-26T14:49:13.271Z",
+    "end": "2023-09-26T14:49:27.244Z",
+    "duration": 13973,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "cc9bfbb2-4345-43b1-85e0-731aff3b067f",
+      "title": "",
+      "fullFile": "cypress\\e2e\\TC2_AddNewUser.cy.js",
+      "file": "cypress\\e2e\\TC2_AddNewUser.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "48e86b32-b78a-41a9-8537-74a0f913fff9",
+          "title": "TestCase2",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "AddNewUser",
+              "fullTitle": "TestCase2 AddNewUser",
+              "timedOut": null,
+              "duration": 10228,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.log(\"TC1 START - Verify Successful Login\");\nconst base = new _BaseClass.default();\nconst common = new _Common.default();\nconst login = new _LoginPage.default();\nconst signup = new _SignUpPage.default();\nbase.LaunchApplication();\nlogin.CLickOnSignUpLink();\nvar randomNumber = common.GenerateRandomNumber(5);\ncy.log(\"Random Number is \" + randomNumber);\nconst sName = \"Mahender\" + randomNumber;\nconst sEmail = \"mahender\" + randomNumber + \"@gmail.com\";\nconst sPassword = \"Ma\" + randomNumber + \"@go\";\nsignup.AddANewUser(sName, sEmail, sPassword);\ncy.log(\"TC1 END - Verify Successful Login\");",
+              "err": {},
+              "uuid": "029d1ac5-02aa-49b1-a8d5-beb1847c72c1",
+              "parentUUID": "48e86b32-b78a-41a9-8537-74a0f913fff9",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "029d1ac5-02aa-49b1-a8d5-beb1847c72c1"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 10228,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
